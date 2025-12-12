@@ -1,11 +1,112 @@
-/* .section {
-    display: block;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.dark h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #F9FAF8;
 }
 
-.subsection {
-    display: inline-block;
-} */
+* {
+    margin: 0;
+    font-family: "Roboto";
+    box-sizing: border-box;
+    min-width: 0;
+}
 
-p {
-    color: rgb(0, 0, 0);
+.light * {
+    color: #1F2937;
+}
+
+.dark * {
+    color: #E5E7EB;
+}
+
+.hero-all {
+    padding: 1rem 3rem;
+    max-width: 70rem;
+}
+
+.hero-section {
+    display: grid;
+    justify-content: center;
+    background-color: #1F2937;
+}
+
+.hero-content {
+    display: flex;
+    gap: 3rem;
+    padding: 6rem 0rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+    flex-shrink: 2;
+}
+
+.hero-text * {
+    flex-grow: 1;
+}
+
+.button {
+    padding: .5rem 2rem;
+    background-color: #3882F6;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    flex-grow: 0;
+    max-width: fit-content;
+    transition: transform 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.button:hover, .button:focus {
+    transform: scale(1.1);
+    color: #3882F6;
+    background-color: #E5E7EB;
+}
+
+nav {
+    display: flex;
+    padding: 1rem 0rem;
+    justify-content:space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    text-underline-offset: .1rem;
+    transition: transform 0.3s, color 0.3s, text-decoration 0.3s, text-underline-offset 0.3s;
+    display: inline-block;
+}
+
+nav a:hover, nav a:focus {
+    transform: translateY(-2px);
+    color: #7dabf6;
+}
+
+nav ul a:hover, nav ul a:focus {
+    text-decoration: underline;
+    text-underline-offset: .3rem;
+
+}
+
+.nav-links {
+    justify-self: end;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #F9FAF8;
+    font-weight: 800;
+}
+
+img {
+    flex-basis: 521px;
+    object-fit: cover;
+    flex-shrink: 1;
 }
