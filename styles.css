@@ -6,6 +6,15 @@
     color: #F9FAF8;
 }
 
+.light h2 {
+    color: #1F2937;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+
 * {
     margin: 0;
     font-family: "Roboto";
@@ -21,15 +30,26 @@
     color: #E5E7EB;
 }
 
-.hero-all {
+.dark {
+    background-color: #1F2937;
+}
+
+.grey {
+    background-color: #E5E7EB;
+}
+
+.light {
+    background-color: #F9FAF8;
+}
+
+.all {
     padding: 1rem 3rem;
     max-width: 70rem;
 }
 
-.hero-section {
+.section {
     display: grid;
     justify-content: center;
-    background-color: #1F2937;
 }
 
 .hero-content {
@@ -54,11 +74,15 @@
     background-color: #3882F6;
     border-radius: .5rem;
     text-decoration: none;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
     flex-grow: 0;
     max-width: fit-content;
     transition: transform 0.3s, color 0.3s, background-color 0.3s;
+    color: #E5E7EB;
+    display: inline-block;
+    height: min-content;
+    flex-shrink: 0;
 }
 
 .button:hover, .button:focus {
@@ -82,14 +106,17 @@ nav a {
 }
 
 nav a:hover, nav a:focus {
-    transform: translateY(-2px);
     color: #7dabf6;
 }
 
+nav .logo:hover, nav .logo:focus {
+    transform: scale(1.1);
+}
+
 nav ul a:hover, nav ul a:focus {
+    transform: translateY(-2px);
     text-decoration: underline;
     text-underline-offset: .3rem;
-
 }
 
 .nav-links {
@@ -109,4 +136,66 @@ img {
     flex-basis: 521px;
     object-fit: cover;
     flex-shrink: 1;
+}
+
+.quote {
+    color: #1F2937;
+    font-size: 2.25rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+
+.small-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.quote.all {
+    max-width: 55rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.quote-tag {
+    text-align: right;
+}
+
+.c2a.all {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.c2a-block {
+    background-color: #3882F6;
+    max-width: 50rem;
+    display: flex;
+    padding: 3rem 6rem;
+    align-items: center;
+    box-sizing: content-box;
+    justify-content: space-between;
+    border-radius: .5rem;
+    gap: 2rem;
+}
+
+.c2a-block * {
+    color:#F9FAF8;
+}
+
+.c2a-block div {
+    flex-grow: 1;
+    width: 100vw;
+}
+
+.c2a-block .button {
+    border: 2px solid #F9FAF8;
+}
+
+.footer .all {
+    padding: 2rem 2rem;
+}
+
+.gallery.all {
+    padding: 3rem;
 }
