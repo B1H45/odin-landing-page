@@ -63,6 +63,7 @@ h2 {
     flex-direction: column;
     max-width: 25rem;
     flex-shrink: 2;
+    gap: .5rem;
 }
 
 .hero-text * {
@@ -198,4 +199,28 @@ img {
 
 .gallery.all {
     padding: 3rem;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.gallery-item img {
+    border: solid #3882F6 4px;
+    border-radius: .7rem;
+    flex-basis: 150px;
+}
+
+.gallery-item div {
+    width: min-content;
+}
+
+.gallery-list {
+    list-style: none;
+    display: grid;
+    padding-left: 0;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    width: calc(100vw - 6rem);
+    max-width: 55rem;
 }
